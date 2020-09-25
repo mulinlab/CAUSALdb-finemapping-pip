@@ -11,12 +11,10 @@ cd ..
 rm 3.0.zip
 
 # CAVIARBF
-wget -c https://bitbucket.org/Wenan/caviarbf/get/7e428645be5e.zip
-unzip 7e428645be5e.zip
-cd Wenan-caviarbf-7e428645be5e
+git clone https://bitbucket.org/Wenan/caviarbf.git
+cd caviarbf
 make
 cd ..
-rm 7e428645be5e.zip
 
 # FINEMAP v1.3.1
 wget -c http://www.christianbenner.com/finemap_v1.3.1_x86_64.tgz
