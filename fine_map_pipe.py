@@ -200,8 +200,8 @@ if __name__ == "__main__":
     args = parseArguments()
     py_dir = os.path.split(os.path.realpath(__file__))[0]
     paintor = f'{py_dir}/bin/PAINTOR_V3.0-3.0/PAINTOR'
-    caviarbf = f'{py_dir}/bin/Wenan-caviarbf-7e428645be5e/caviarbf'
-    model_search = f'{py_dir}/bin/Wenan-caviarbf-7e428645be5e/model_search'
+    caviarbf = f'{py_dir}/bin/caviarbf/caviarbf'
+    model_search = f'{py_dir}/bin/caviarbf/model_search'
     finemap = f'{py_dir}/bin/finemap_v1.3.1_x86_64/finemap_v1.3.1_x86_64'
 
     blocks_file = f'{py_dir}/ref/blocks.txt'
