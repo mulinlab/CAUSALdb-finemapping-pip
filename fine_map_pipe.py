@@ -118,7 +118,7 @@ def get_credible_set(meta_id):
         'ca_p_min', 'ca_p_median', 'ca_pp_mean', 'ca_pp_median', 'fi_n',
         'fi_p_min', 'fi_p_median', 'fi_pp_mean', 'fi_pp_median'
     ])
-    total_credible = pd.Series()
+    total_credible = pd.Series(dtype=float)
 
     for i in sig_blocks.index:
         chr_id, start, stop = sig_blocks.loc[i][:-1]
@@ -130,7 +130,7 @@ def get_credible_set(meta_id):
         df = pd.read_csv(f'{out_dir}/{meta_id}_{chr_id}_{start}_{stop}.causal.txt',sep='\t',names=names)
 
         credible_cutoff = args.cred*max_causal
-        maxpostprob_idx = pd.Series()
+        maxpostprob_idx = pd.Series(dtype=float)
         fm_tool_cred = pd.Series(index=['PAINTOR', 'CAVIARBF', 'FINEMAP'],data=[[], [], []])
         fm_tool_label = pd.Series(index=['PAINTOR', 'CAVIARBF', 'FINEMAP'],data=[1, 2, 4])
         credible_set = df[df['FINEMAP'] != -1]
