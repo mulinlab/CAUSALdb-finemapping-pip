@@ -3,6 +3,8 @@
 name: finemap
 channels:
 - defaults
+- bioconda
+- conda-forge
 dependencies:
 - bcftools
 - tabix
