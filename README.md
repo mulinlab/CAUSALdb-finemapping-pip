@@ -17,7 +17,7 @@ This is a pipeline of summary statistics based fine-mapping using three commonly
 Clone this repo:
 
 ```shell
-git clone https://github.com/Jianhua-Wang/Fine-mapping.git
+git clone https://github.com/mulinlab/CAUSALdb-finemapping-pip.git
 ```
 
 set up conda environment and download fine-mapping tools:
