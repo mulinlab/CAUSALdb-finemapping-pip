@@ -41,7 +41,7 @@ for pop in pop_list:
     else:
         block = blocks[blocks['pop']=='AFR']
     for i in blocks.index:
-        chr_id, start, stop = blocks.loc[i].values[:-1]
+        chr_id, start, stop = block.loc[i].values[:-1]
         p.apply_async(split_reference,(pop, chr_id, start, stop))
 p.close()
 p.join()
@@ -80,7 +80,7 @@ for pop in pop_list:
     else:
         block = blocks[blocks['pop']=='AFR']
     for i in blocks.index:
-        chr_id, start, stop = blocks.loc[i].values[:-1]
+        chr_id, start, stop = block.loc[i].values[:-1]
         p.apply_async(generate_genotype_matrix,(pop,chr_id, start, stop))
 p.close()
 p.join()
