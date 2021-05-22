@@ -12,8 +12,8 @@ pop_list = ['EUR','EAS','SAS','AMR','AFR']
 call('mkdir -p ./ld/vcf',shell=True)
 
 for chromosome in range(1,23):
-    call(f'wget -c ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/ALL.chr{chromosome}.phase3_shapeit2_mvncall_integrated_v5a.20130502.genotypes.vcf.gz -P ./ld/vcf',shell=True)
-    call(f'wget -c ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/ALL.chr{chromosome}.phase3_shapeit2_mvncall_integrated_v5a.20130502.genotypes.vcf.gz.tbi -P ./ld/vcf',shell=True)
+    call(f'wget -c ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/ALL.chr{chromosome}.phase3_shapeit2_mvncall_integrated_v5b.20130502.genotypes.vcf.gz -P ./ld/vcf',shell=True)
+    call(f'wget -c ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/ALL.chr{chromosome}.phase3_shapeit2_mvncall_integrated_v5b.20130502.genotypes.vcf.gz.tbi -P ./ld/vcf',shell=True)
 
 call('wget -c ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/integrated_call_samples_v3.20130502.ALL.panel -P ./ld/vcf',shell=True)
 
