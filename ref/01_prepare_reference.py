@@ -28,7 +28,7 @@ for pop in pop_list:
 blocks = pd.read_csv('./blocks.txt',sep='\t')
 
 def split_reference(pop,chr_id, start, stop):
-    call(f'bcftools view -S ./ld/vcf/{pop}.sample -m2 -M2 -i \'INFO/{pop}_AF>0\' ./ld/vcf/ALL.chr{chr_id}.phase3_shapeit2_mvncall_integrated_v5a.20130502.genotypes.vcf.gz {chr_id}:{start}-{stop} -O z -o ./ld/vcf/{pop}_1/{pop}_{chr_id}_{start}_{stop}.vcf.gz',shell=True)
+    call(f'bcftools view -S ./ld/vcf/{pop}.sample -m2 -M2 -i \'INFO/{pop}_AF>0\' ./ld/vcf/ALL.chr{chr_id}.phase3_shapeit2_mvncall_integrated_v5b.20130502.genotypes.vcf.gz {chr_id}:{start}-{stop} -O z -o ./ld/vcf/{pop}_1/{pop}_{chr_id}_{start}_{stop}.vcf.gz',shell=True)
     call(f'bcftools norm --rm-dup both ./ld/vcf/{pop}_1/{pop}_{chr_id}_{start}_{stop}.vcf.gz -O z -o ./ld/vcf/{pop}/{pop}_{chr_id}_{start}_{stop}.vcf.gz',shell=True)
     call(f'tabix -f ./ld/vcf/{pop}/{pop}_{chr_id}_{start}_{stop}.vcf.gz',shell=True)
 
