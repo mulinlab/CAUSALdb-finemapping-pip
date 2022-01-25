@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# conda env create -f finemapcondaenv.yml
+conda env create -f finemapcondaenv.yml
 
 # PAINTOR v3.0
 wget -c https://github.com/gkichaev/PAINTOR_V3.0/archive/3.0.zip
