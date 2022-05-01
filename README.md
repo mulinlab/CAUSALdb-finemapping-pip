@@ -128,3 +128,7 @@ I appended five columns in the input file:
 - <http://www.christianbenner.com/>
 - <https://github.com/gkichaev/PAINTOR_V3.0>
 - <https://bitbucket.org/Wenan/caviarbf/src/default/>
+
+
+## Citation
+Wang J, Huang D, Zhou Y, Yao H, Liu H, Zhai S, Wu C, Zheng Z, Zhao K, Wang Z, Yi X, Zhang S, Liu X, Liu Z, Chen K, Yu Y, Sham PC, Li MJ. CAUSALdb: a database for disease/trait causal variants identified using summary statistics of genome-wide association studies. Nucleic Acids Res. 2020 Jan 8;48(D1):D807-D816.
